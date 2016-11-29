@@ -1,0 +1,9 @@
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\NAA.Data.dll.config
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\NAA.Data.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\NAA.Data.pdb
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\EntityFramework.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\EntityFramework.xml
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\obj\Debug\NAA.Data.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\obj\Debug\NAA.Data.pdb

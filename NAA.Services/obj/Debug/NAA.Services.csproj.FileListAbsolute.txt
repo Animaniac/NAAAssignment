@@ -1,0 +1,9 @@
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Services.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Services.pdb
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Data.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\EntityFramework.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Data.pdb
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\EntityFramework.xml
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.csprojResolveAssemblyReference.cache
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.dll
+F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.pdb

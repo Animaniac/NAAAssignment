@@ -11,10 +11,10 @@ namespace NAA.Data.DAO
 {
     public class ApplicantDAO:IApplicantDAO
     {
-        private b2007512Entities _context;
+        private b2007512Entities1 _context;
         public ApplicantDAO()
         {
-            _context = new b2007512Entities();
+            _context = new b2007512Entities1();
         }        
 
         public Profile GetApplicantDetails(int id)

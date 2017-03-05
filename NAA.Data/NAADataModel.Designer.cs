@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'f:\mywork\visual studio 2013\Projects\AislabieRhysAWA\NAA.Data\NAADataModel.edmx'. 
+﻿// T4 code generation is enabled for model 'F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Data\NAADataModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ApplicantAdminController.cs" />
     <Compile Include="Controllers\ApplicantController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -233,6 +234,7 @@
     <Content Include="Views\Applicant\Profiles.cshtml" />
     <Content Include="Views\Admin\CreateProfile.cshtml" />
     <Content Include="Views\Admin\Delete.cshtml" />
+    <Content Include="Views\ApplicantAdmin\CreateNewApplication.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

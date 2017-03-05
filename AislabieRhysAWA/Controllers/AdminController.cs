@@ -17,6 +17,7 @@ namespace AislabieRhysAWA.Controllers
         {
             _applicantService = new ApplicantService();
         }
+        [Authorize()]
         public ActionResult EditProfile(int id)
         {
             return View(_applicantService.GetApplicantDetails(id));

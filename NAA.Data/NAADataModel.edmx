@@ -5,6 +5,20 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="b2007512Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationId" Type="int" Nullable="false" />
+          <Property Name="ApplicantId" Type="int" Nullable="false" />
+          <Property Name="CourseName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UniversityId" Type="int" Nullable="false" />
+          <Property Name="PersonalStatement" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TeacherReference" Type="nvarchar(max)" />
+          <Property Name="TeacherContactDetails" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="UniversityOffer" Type="nvarchar" MaxLength="10" />
+          <Property Name="Firm" Type="bit" />
+        </EntityType>
         <EntityType Name="Profile">
           <Key>
             <PropertyRef Name="ApplicantId" />
@@ -16,14 +30,37 @@
           <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
         </EntityType>
+        <EntityType Name="University">
+          <Key>
+            <PropertyRef Name="UniversityId" />
+          </Key>
+          <Property Name="UniversityId" Type="int" Nullable="false" />
+          <Property Name="UniversityName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
         <EntityContainer Name="b2007512ModelStoreContainer">
+          <EntitySet Name="Application" EntityType="Self.Application" Schema="b2007512" store:Type="Tables" />
           <EntitySet Name="Profile" EntityType="Self.Profile" Schema="b2007512" store:Type="Tables" />
+          <EntitySet Name="University" EntityType="Self.University" Schema="b2007512" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="b2007512Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Int32" Nullable="false" />
+          <Property Name="ApplicantId" Type="Int32" Nullable="false" />
+          <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UniversityId" Type="Int32" Nullable="false" />
+          <Property Name="PersonalStatement" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TeacherReference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TeacherContactDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UniversityOffer" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Firm" Type="Boolean" />
+        </EntityType>
         <EntityType Name="Profile">
           <Key>
             <PropertyRef Name="ApplicantId" />
@@ -35,15 +72,39 @@
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="b2007512Entities" annotation:LazyLoadingEnabled="true">
+        <EntityType Name="University">
+          <Key>
+            <PropertyRef Name="UniversityId" />
+          </Key>
+          <Property Name="UniversityId" Type="Int32" Nullable="false" />
+          <Property Name="UniversityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="b2007512Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Application" EntityType="Self.Application" />
           <EntitySet Name="Profile" EntityType="Self.Profile" />
+          <EntitySet Name="University" EntityType="Self.University" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="b2007512ModelStoreContainer" CdmEntityContainer="b2007512Entities">
+        <EntityContainerMapping StorageEntityContainer="b2007512ModelStoreContainer" CdmEntityContainer="b2007512Entities1">
+          <EntitySetMapping Name="Application">
+            <EntityTypeMapping TypeName="b2007512Model.Application">
+              <MappingFragment StoreEntitySet="Application">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+                <ScalarProperty Name="UniversityId" ColumnName="UniversityId" />
+                <ScalarProperty Name="PersonalStatement" ColumnName="PersonalStatement" />
+                <ScalarProperty Name="TeacherReference" ColumnName="TeacherReference" />
+                <ScalarProperty Name="TeacherContactDetails" ColumnName="TeacherContactDetails" />
+                <ScalarProperty Name="UniversityOffer" ColumnName="UniversityOffer" />
+                <ScalarProperty Name="Firm" ColumnName="Firm" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Profile">
             <EntityTypeMapping TypeName="b2007512Model.Profile">
               <MappingFragment StoreEntitySet="Profile">
@@ -53,6 +114,14 @@
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="University">
+            <EntityTypeMapping TypeName="b2007512Model.University">
+              <MappingFragment StoreEntitySet="University">
+                <ScalarProperty Name="UniversityId" ColumnName="UniversityId" />
+                <ScalarProperty Name="UniversityName" ColumnName="UniversityName" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

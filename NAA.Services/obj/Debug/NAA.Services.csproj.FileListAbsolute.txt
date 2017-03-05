@@ -7,3 +7,12 @@ F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\Ent
 F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.csprojResolveAssemblyReference.cache
 F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.dll
 F:\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.pdb
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Services.dll
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Services.pdb
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Data.dll
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\EntityFramework.dll
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\NAA.Data.pdb
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\bin\Debug\EntityFramework.xml
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.csprojResolveAssemblyReference.cache
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.dll
+\\studenthome.hallam.shu.ac.uk\studenthome5\2\b2007512\MyWork\Visual Studio 2013\Projects\AislabieRhysAWA\NAA.Services\obj\Debug\NAA.Services.pdb

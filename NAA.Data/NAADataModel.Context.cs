@@ -13,10 +13,10 @@ namespace NAA.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class b2007512Entities : DbContext
+    public partial class b2007512Entities1 : DbContext
     {
-        public b2007512Entities()
-            : base("name=b2007512Entities")
+        public b2007512Entities1()
+            : base("name=b2007512Entities1")
         {
         }
     
@@ -25,6 +25,8 @@ namespace NAA.Data
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Application> Application { get; set; }
         public virtual DbSet<Profile> Profile { get; set; }
+        public virtual DbSet<University> University { get; set; }
     }
 }

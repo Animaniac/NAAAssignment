@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NAA.Services.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,11 @@ namespace AislabieRhysAWA.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            var applicantService = new ApplicantService();
+            if (User.IsInRole("Applicant"))
+            {
+                RedirectToAction("Create", "Applicant");
+            }
             return View();
         }
 
